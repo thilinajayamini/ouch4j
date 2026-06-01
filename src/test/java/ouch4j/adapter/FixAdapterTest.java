@@ -18,7 +18,7 @@
 package ouch4j.adapter;
 
 import ouch4j.codec.ByteBufferUtil;
-import com.ouch.message.*;
+import ouch4j.message.*;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;

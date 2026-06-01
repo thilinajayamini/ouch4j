@@ -18,7 +18,7 @@
 package ouch4j.codec;
 
 import ouch4j.constant.MessageType;
-import com.ouch.message.*;
+import ouch4j.message.*;
 import ouch4j.message.*;
 
 import java.nio.ByteBuffer;

@@ -20,7 +20,7 @@ package ouch4j.adapter;
 import ouch4j.codec.ByteBufferUtil;
 import ouch4j.constant.MessageType;
 import ouch4j.constant.Side;
-import com.ouch.message.*;
+import ouch4j.message.*;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
