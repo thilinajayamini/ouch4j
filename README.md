@@ -1,4 +1,4 @@
-# OUCH 5.0 Protocol — Deep Dive
+# OUCH 5.0 Protocol
 
 ## 1. What is OUCH?
 
