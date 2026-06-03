@@ -1,4 +1,17 @@
-# OUCH 5.0 Protocol
+# OUCH4J 1.0 
+
+Maven Central 
+
+```xml
+<dependency>
+    <groupId>io.github.thilinajayamini</groupId>
+    <artifactId>ouch4j</artifactId>
+    <version>1.0.0</version>
+</dependency>
+
+```
+
+
 
 ## 1. What is OUCH?
 
@@ -53,7 +66,7 @@ graph TB
         A["Trading Logic<br/>(currently FIX-based)"]
     end
     
-    subgraph "OUCH Library (what we're building)"
+    subgraph "OUCH4J Library "
         B["FIX→OUCH Adapter<br/>(QuickFIX/J → OUCH)"]
         C["OUCH Encoder<br/>(POJO → ByteBuffer)"]
         D["OUCH Decoder<br/>(ByteBuffer → POJO)"]
@@ -327,18 +340,3 @@ sequenceDiagram
 
 ---
 
-## 10. Key Implementation Considerations
-
-> [!TIP]
-> **Performance Tips for the Java Library:**
-> - Use `java.nio.ByteBuffer` with direct allocation for zero-copy I/O
-> - Avoid object creation in the hot path — use flyweight/reusable message objects
-> - Pre-allocate byte arrays for Alpha fields
-> - Use big-endian byte order (network byte order) — this is `ByteBuffer`'s default
-
-> [!WARNING]
-> **Common Pitfalls:**
-> - **Price scaling**: FIX prices are decimals (`150.50`), OUCH prices are scaled integers (`1505000`). The scaling factor is exchange-specific.
-> - **Alpha padding**: All alpha fields must be left-justified and right-padded with spaces to their full length
-> - **Order Token uniqueness**: Tokens must be unique within a trading day per OUCH port
-> - **Appendage parsing**: Your decoder MUST handle unknown tags gracefully (skip by reading length)
