@@ -6,7 +6,7 @@
 
     <groupId>io.github.thilinajayamini</groupId>
     <artifactId>ouch4j</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <packaging>jar</packaging>
 
     <name>OUCH 5.0 Protocol Library for Java</name>
