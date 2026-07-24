@@ -1,4 +1,5 @@
-# OUCH4J 1.0 
+# OUCH4J 1.0 - Nasdaq OUCH 5.0 Specification implementation on JAVA
+
 
 Maven Central 
 
